@@ -12,6 +12,7 @@ interface IDisplayCard {
   paddingBottom?: string;
   marginBottom?: string;
   bottom?: string;
+  margin? : string;
 }
 export const DisplayCard = ({
   children,
@@ -25,6 +26,7 @@ export const DisplayCard = ({
   paddingBottom,
   marginBottom,
   bottom,
+  margin,
 }: IDisplayCard) => {
   return (
     <Box
@@ -42,6 +44,7 @@ export const DisplayCard = ({
         mb: marginBottom,
         overflowX: "hidden",
         bottom: bottom,
+        margin: margin,
       }}
     >
       <Container maxWidth="xl">{children}</Container>
